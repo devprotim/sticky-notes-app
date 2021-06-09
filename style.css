@@ -1,13 +1,13 @@
 body {
   margin: 20px auto;
-  font-family: 'Lato';
-  background:#666;
-  color:#fff;
+  font-family: "Lato";
+  background: linear-gradient(to right top, #d7e0df, #40d4e7);
+  color: #fff;
 }
 
-*{
-  margin:0;
-  padding:0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
 h2 {
@@ -15,55 +15,63 @@ h2 {
   font-size: 2rem;
 }
 p {
-  font-family: 'Reenie Beanie', cursive;
-  font-size: 2rem;
+  font-family: "Daniel's Handwriting B", "Reenie Beanie" cursive;
+  font-size: 1.5rem;
 }
-ul,li{
-  list-style:none;
+ul,
+li {
+  list-style: none;
 }
-ul{
+ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-ul li a{
-  text-decoration:none;
-  color:#000;
-  background:#ffc;
-  display:block;
-  height:10em;
-  width:10em;
-  padding:1em;
-  box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+ul li a {
+  text-decoration: none;
+  text-shadow: black;
+  color: #000;
+  background: rgb(230, 162, 61);
+  display: block;
+  height: 10em;
+  width: 10em;
+  padding: 1em;
+  box-shadow: 5px 5px 7px rgba(33, 33, 33, 0.7);
   transform: rotate(-6deg);
-  transition: transform .15s linear;
+  transition: transform 0.15s linear;
+  border-radius: 1.5rem;
+  z-index: 8;
+  backdrop-filter: blur(6rem);
 }
 
-ul li:nth-child(even) a{
-  transform:rotate(4deg);
-  position:relative;
-  top:5px;
-  background:#cfc;
+ul li:nth-child(even) a {
+  transform: rotate(4deg);
+  position: relative;
+  top: 5px;
+  background: rgb(77, 211, 77);
 }
-ul li:nth-child(3n) a{
-  transform:rotate(-3deg);
-  position:relative;
-  top:-5px;
-  background:#ccf;
+ul li:nth-child(3n) a {
+  transform: rotate(-3deg);
+  position: relative;
+  top: -5px;
+  background: rgb(223, 220, 55);
 }
-ul li:nth-child(5n) a{
-  transform:rotate(5deg);
-  position:relative;
-  top:-10px;
+ul li:nth-child(5n) a {
+  transform: rotate(5deg);
+  position: relative;
+  top: -10px;
 }
 
-ul li a:hover,ul li a:focus{
-  box-shadow:10px 10px 7px rgba(0,0,0,.7);
+ul li a:hover,
+ul li a:focus {
+  box-shadow: 10px 10px 7px rgba(0, 0, 0, 0.7);
   transform: scale(1.25);
-  position:relative;
-  z-index:5;
+  position: relative;
+  z-index: 5;
+  backdrop-filter: blur(1rem);
+  z-index: 8;
 }
 
-ul li{
-  margin:1em;
+ul li {
+  margin: 4em;
 }
